@@ -22,6 +22,17 @@ jQuery(function ($) {
 	        $(".navbar-fixed-top").removeClass("sticky-nav");
 	    }
 	});
+  $(function(){  
+    $(window).scroll(function(){
+        if($(this).scrollTop()>5){            
+            $r(".navbar-header .navbar-brand").attr("src","img/logosticky.png");         
+        }
+        else{
+             $r(".navbar-header .navbar-brand").attr("src","img/logo5.png");     
+            
+        }        
+    })
+  })
 
 
 
